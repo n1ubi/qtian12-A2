@@ -1,5 +1,5 @@
 /**
- * Employee class: Inherits from Person, manages information of personnel involved in the operation of amusement facilities
+ * Employee class: Inherits from Person
  * Add two exclusive attributes: employee ID and type of rides they are responsible for.
  */
 public class Employee extends Person {
@@ -11,8 +11,8 @@ public class Employee extends Person {
     public Employee() {}
 
     // Parameterized constructor (initializes own properties + parent class properties)
-    public Employee(String name, int age, String contact, String employeeId, String operateRideType) {
-        super(name, age, contact); // Call the constructor of the parent class
+    public Employee(String name, int age, String phoneNumber, String employeeId, String operateRideType) {
+        super(name, age, phoneNumber); // Call the constructor of the parent class
         this.employeeId = employeeId;
         this.operateRideType = operateRideType;
     }

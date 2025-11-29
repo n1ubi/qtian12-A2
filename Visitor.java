@@ -1,5 +1,5 @@
 /**
- * Tourist class: Inherits from Person, manages information of visitors to the theme park
+ * Tourist class: Inherits from Person
  * Two exclusive attributes have been added: the new visitor number and whether a quick pass was purchased.
  */
 public class Visitor extends Person {
@@ -11,8 +11,8 @@ public class Visitor extends Person {
     public Visitor() {}
 
     // Parameterized constructor
-    public Visitor(String name, int age, String contact, String visitorId, boolean hasFastPass) {
-        super(name, age, contact);
+    public Visitor(String name, int age, String phoneNumber, String visitorId, boolean hasFastPass) {
+        super(name, age, phoneNumber);
         this.visitorId = visitorId;
         this.hasFastPass = hasFastPass;
     }
