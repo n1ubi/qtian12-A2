@@ -1,3 +1,5 @@
+import java.util.List;
+
 public interface RideInterface {
     // Part3
     void addVisitorToQueue(Visitor visitor);
@@ -10,4 +12,6 @@ public interface RideInterface {
     int numberOfVisitors();
     void printRideHistory();
 
+    // Part5
+    void runOneCycle();
 }
